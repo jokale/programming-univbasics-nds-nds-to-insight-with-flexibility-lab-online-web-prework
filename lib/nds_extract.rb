@@ -38,7 +38,7 @@ def movies_with_director_key(name, movies_collection)
  counter = 0 
  while counter < movies_with_director_key.length do 
    movie_data = movies_with_director_name[counter]
-     result << movie_with_director_name(name, movie_data)
+     hash << movie_with_director_name(name, movie_data)
     counter += 1
   end
   result
