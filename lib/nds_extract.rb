@@ -57,21 +57,7 @@ def movies_with_director_key(name, movies_collection)
   # :director_name key. This addition can be done by using the provided
   # movie_with_director_name method
 end
-final = {}
-  i = 0 
 
-  while i < collection.length do 
-    # name = collection[i][:studio]
-    # ww_gross = collection[i][:worldwide_gross]
-    if !final[collection[i][:studio]]
-      final[collection[i][:studio]] = collection[i][:worldwide_gross]
-    else 
-      final[collection[i][:studio]] += collection[i][:worldwide_gross]
-    end   
-    i += 1  
-  end 
-  return final
-end
 
 
 def gross_per_studio(collection)
