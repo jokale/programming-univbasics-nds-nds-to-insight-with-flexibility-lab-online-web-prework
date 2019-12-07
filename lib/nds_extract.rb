@@ -35,8 +35,7 @@ end
 
 def movies_with_director_key(name, movies_collection)
   {
-    :name => direc_name,
-    :title => movies_collection[:title]
+    :director_name => movies_collection[:director_name]
   }
   # GOAL: For each Hash in an Array (movies_collection), provide a collection
   # of movies and a directors name to the movie_with_director_name method
